@@ -1,7 +1,5 @@
 # Duplicate job ID detection
 
-* Demo link -> click [here](https://youtu.be/cOa33jc0is8)
-
 ## setup
 * make sure the `jobpostings.csv` is inside the `data` folder
 
@@ -10,7 +8,7 @@
 * open a terminal on this folder and run `docker compose up -d`
 
 
-## information regarding submission:
+## information regarding repository:
 
 - I am using all-MiniLM-L6-v2 sentence transformer model
 
@@ -42,10 +40,3 @@ For generating embeddings from job descriptions, Sentence Transformers would be 
 - use model `all-mpnet-base-v2`.
 - use filtering to get better results.
 - perform data cleaning on the job descriptions.
-- Due to time constraints, I was able to insert 16000/21000 groups into the collection (Each dataframe is grouped by Company Name, City, State, Zipcode, Website Url). Next step would be to train all groups
-- Due to time constraints, I could only cluster for the first 100K job ids. Next step would be to cluster the remaining ids.
-
-
-
-## Interesting fact:
-- I was able to find 72k clusters from the first 100k results. Meaning I could find around 25k duplicate job ids just by looking at the first 100k jobs.
